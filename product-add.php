@@ -32,25 +32,25 @@
 
         <div class="attribute-field">
             <div class="dvd-form">
-                <p>Please provide the DVD's memory size in numbers (MB)</p>
+                <p>Please, provide size</p>
                 <label for="size">Size (MB)</label>
-                <input type="text" id="size" name="size">
+                <input type="number" id="size" name="size">
             </div>
 
             <div class="furniture-form">
                 <p>Please provide dimensions in HxWxL format</p>
                 <label for="height">Height (CM)</label>
-                <input type="text" id="height" name="height">
+                <input type="number" id="height" name="height">
                 <label for="width">Width (CM)</label>
-                <input type="text" id="width" name="width">
+                <input type="number" id="width" name="width">
                 <label for="length">Length (CM)</label>
-                <input type="text" id="length" name="length">
+                <input type="number" id="length" name="length">
             </div>
 
             <div class="book-form">
-                <p>Please provide the book's weight in numbers (KG)</p>
+                <p>Please, provide weight</p>
                 <label for="weight">Weight (KG)</label>
-                <input type="text" id="weight" name="weight">
+                <input type="number" id="weight" name="weight">
             </div>
         </div>
     </form>
