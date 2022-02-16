@@ -24,6 +24,7 @@
             <span><?= $price ?></span>
             <span><?= $attribute ?></span>
         </div>
+
         <div class="product">
             <input type='checkbox' name='delete-checkbox' id='delete-checkbox'>
             <span><?= $sku ?></span>
