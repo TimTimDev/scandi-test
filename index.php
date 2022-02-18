@@ -1,5 +1,19 @@
 <?php
 
+$host = "d98707.mysql.zonevs.eu";
+$servername = "d98707_scandi";
+$username = "d98707_tester";
+$password = "Mulletman13";
+
+try {
+  $conn = new PDO("mysql:host=$host;dbname=$servername", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+
 $sku = "SKU";
 $name = "Name";
 $price = "Price";
@@ -27,3 +41,7 @@ for($x = 0; $x <= count($product); $x++) {
 }
 
 echo "</div>";
+
+// Refactor & reorganize code
+// Add functionality to buttons
+// Connect DB
