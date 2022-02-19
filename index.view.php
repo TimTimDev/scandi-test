@@ -21,7 +21,7 @@
 
         <?php  foreach($products as $i => $product){ ?>
             <div class="product">
-                    <input type='checkbox' name='delete-checkbox[]' class='delete-checkbox' value="<?= $i ?> ">
+                    <input type='checkbox' name='delete-checkbox[]' class='delete-checkbox' value="<?= $i ?>">
                     <span><?= $product["SKU"] ?></span>
                     <span><?= $product["Name"] ?></span>
                 <span><?= $product["Price"] ?></span>

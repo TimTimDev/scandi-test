@@ -35,6 +35,15 @@ $products = [
             ];
 
                     
+if(isset($_POST["delete-product"]) && isset($_POST["delete-checkbox"]))
+{
+  // var_dump(isset($_POST["delete-checkbox"]));
+  foreach($_POST["delete-checkbox"] as $i){
+    // var_dump($i);
+    unset($products[$i]);
+  }
+}
+
 require 'index.view.php';
 
 /* for($x = 1; $x <= count($products); $x++) {
@@ -53,11 +62,6 @@ require 'index.view.php';
 // foreach($checked as )
 
 
-if($_POST["delete-product"])
-{
-  
-  var_dump($_POST["delete-checkbox"]);
-}
 
 // fix loop
 // Add functionality to buttons
