@@ -3,45 +3,63 @@
 $host = "d98707.mysql.zonevs.eu";
 $servername = "d98707_scandi";
 $username = "d98707_tester";
-$password = "Mulletman13";
+$password = "";
 
-try {
+/* try {
   $conn = new PDO("mysql:host=$host;dbname=$servername", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   echo "Connected successfully";
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
-}
+} */
 
 $sku = "SKU";
 $name = "Name";
 $price = "Price";
 $attribute = "Attribute";
 
-$products = array(
-                    "SKU"  => ["JS3F225", "JS3F226", "JS3F227", "JS3F228"],
-                    "Name" => ["CyberPunk", "Rust", "LoL", "GTAV"],
-                    "Price" => [49.99, 19.99, 0, 39.99],
-                    "Size" => [70000, 40000, 12000, 80000] 
-                );
+$products = [
+              ["SKU"  => "JS3F225",
+              "Name" => "CyberPunk",
+              "Price" => 49.99,
+              "Size" => 70000], 
+              ["SKU"  => "JS3F226",
+              "Name" => "xD",
+              "Price" => 49,
+              "Size" => 70000], 
+              ["SKU"  => "JS3F227",
+              "Name" => "LoL",
+              "Price" => 0.99,
+              "Size" => 70000], 
+            ];
 
                     
 require 'index.view.php';
 
-echo "<div class='product-list'>";
-
-for($x = 0; $x <= count($product); $x++) {
+/* for($x = 1; $x <= count($products); $x++) {
     echo "<div class='product'>";
     echo "<input type='checkbox' name='delete-checkbox' id='delete-checkbox'>";
-    foreach($products as $product) {
-        echo "<span> $product[$x] </span>";
+    foreach($products as $key => $value) {
+        echo "<span> $value </span>";
     }
     echo "</div>";
 }
+ */
 
-echo "</div>";
 
-// Refactor & reorganize code
+
+// $checked = $_GET['delete-checkbox'];
+// foreach($checked as )
+
+
+if($_POST["delete-product"])
+{
+  
+  var_dump($_POST["delete-checkbox"]);
+}
+
+// fix loop
 // Add functionality to buttons
+// Refactor & reorganize code
 // Connect DB
