@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Add a product</title>
-</head>
+<?php require('partials/head.php'); ?>
+
 <body>
     <header class="product-add-header">
         <h1>Product Add</h1>
         <div class="header-btns">
-            <a href="index.php"><button>Save</button></a>
-            <a href="index.php"><button>Cancel</button></a>
+            <a href="/"><button>Save</button></a>
+            <a href="/"><button>Cancel</button></a>
         </div>
     </header>
 
@@ -56,4 +49,4 @@
         </div>
     </form>
 </body>
-</html>
+<?php require('partials/footer.php'); ?>
